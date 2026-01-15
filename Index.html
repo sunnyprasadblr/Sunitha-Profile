@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunitha Prasad | Enrich Family Life</title>
+    <meta name="description" content="Sunitha Prasad, Founder of Enrich Family Life. Specializing in family counseling, marriage enrichment, and parenting.">
+    
+    <!-- Open Graph / Facebook / WhatsApp Preview Tags -->
+    <!-- Once you publish, these tags help the link look good when shared -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sunitha Prasad | Enrich Family Life">
+    <meta property="og:description" content="Dedicated to building strong, God-centered families through counseling, teaching, and ministry.">
+    <meta property="og:image" content="image_968b8b.jpg"> 
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,6 +60,10 @@
         .delay-100 { animation-delay: 0.1s; }
         .delay-200 { animation-delay: 0.2s; }
         .delay-300 { animation-delay: 0.3s; }
+        
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="font-sans text-gray-700 bg-cream antialiased overflow-x-hidden">
@@ -120,7 +132,8 @@
                 <div class="relative fade-in-up delay-200">
                     <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
                          <!-- 
-                            IMPORTANT: replace the src below with 'image_968b8b.jpg' if the image is in the same folder.
+                            IMPORTANT for GitHub: 
+                            Ensure the file 'image_968b8b.jpg' is uploaded to the same repository folder as this index.html file.
                         -->
                         <img 
                             src="image_968b8b.jpg" 
@@ -317,16 +330,6 @@
     <script>
         // Initialize Icons
         lucide.createIcons();
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
 </body>
 </html>
